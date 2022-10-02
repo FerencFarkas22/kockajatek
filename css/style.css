@@ -1,0 +1,251 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background: #514644;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+#textBox {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    display: block;
+
+}
+
+#textBox p {
+    margin: 10px 0px;
+}
+
+.wrapper {
+    width: 80vw;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    opacity: 1;
+}
+
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0px -20px;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 200;
+    color: #000000;
+    margin-bottom: 130px;
+}
+
+.active {
+    background-color: #efc8b1;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: -20px;
+    margin-left: 20px;
+
+}
+
+.player-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: 600;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new {
+    top: 45px;
+}
+
+.btn-roll {
+    top: 443px;
+}
+
+.btn-hold {
+    top: 507px;
+}
+
+.ion-checkmark {
+    top: 380px
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#winPoint {
+    border-radius: 30px;
+    position: relative;
+    top: -270px;
+    left: 39%;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#winPoint::placeholder {
+    font-size: 15px;
+    text-align: center;
+}
+
+.winner {
+    background-color: #f7f7f7;
+}
+
+.winner .player-name {
+    font-weight: 300;
+    color: #EB4D4D;
+}
+
+
+@media(max-width:900px) {
+    .wrapper {
+        width: 100vw;
+    }
+    .player-current-box{
+   
+        
+    }
+    .btn-new, .btn-roll, .btn-hold{
+    }
+    .btn-new {
+        top: 20px;
+        left: 50%;
+       
+    }
+    
+    .btn-roll {
+        top: 300px;
+    }
+    
+    .btn-hold {
+        top: 350px;
+    }
+    .active .player-name::after{
+        display: none;
+    }
+    .player-name{
+        position: static;
+        margin-left: -50px;
+    }
+
+}
