@@ -17,7 +17,7 @@ alert("A megtartom gombbal megtarthatod az eddigi pontszámaid és átadhatod a 
 alert("Aki elöbb éri el a az inputba megadott értéket és rányom a megtart gombra, az nyer! Az alap program 30 után hírtet győztest")*/
 var pontSzamok, korPontSzam, aktivJatekos, kocka, elozoDobas;
 init();
-var winNum = 30;
+var winNum = 10;
 
 
 document.getElementById("winPoint").value = winNum;

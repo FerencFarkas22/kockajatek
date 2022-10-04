@@ -218,14 +218,17 @@ i {
 
 
 @media(max-width:900px) {
+    .player-name{
+        font-size: 20px;
+    }
     .wrapper {
         width: 100vw;
     }
+
     .player-current-box{
-   
-        
-    }
-    .btn-new, .btn-roll, .btn-hold{
+        width: 110px;
+        position: absolute;
+        bottom: 0;
     }
     .btn-new {
         top: 20px;
@@ -247,5 +250,13 @@ i {
         position: static;
         margin-left: -50px;
     }
-
+    #winPoint{
+        width: 50px;
+        left: 45vw;
+        top: -400px;
+    }
+.btn-new{top: 10px;}
+.btn-roll{top: 410px;}
+.btn-hold{top: 360px;}
+.ion-checkmark{top: 50px;}
 }
