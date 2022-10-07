@@ -23,6 +23,7 @@ body {
     font-weight: 300;
     position: relative;
     height: 100vh;
+   
     color: #555;
 }
 
@@ -39,7 +40,8 @@ body {
 }
 
 .wrapper {
-    width: 80vw;
+    width:1200px;
+    margin-inline: auto;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -125,7 +127,7 @@ body {
 }
 
 button {
-    position: absolute;
+    position: fixed;
     width: 200px;
     left: 50%;
     transform: translateX(-50%);
@@ -194,9 +196,10 @@ i {
 
 #winPoint {
     border-radius: 30px;
-    position: relative;
-    top: -270px;
-    left: 39%;
+    position: fixed;
+    width: 200px;
+    left: 41.5%;
+    top: 330px;
     padding: 5px 0px;
     text-align: center;
     font-size: 18px;
@@ -222,38 +225,38 @@ i {
         font-size: 20px;
     }
     .wrapper {
-        width: 100vw;
+
+        
     }
 
+    .player-0-panel,
+    .player-1-panel {
+
+    }
     .player-current-box{
-        width: 110px;
-        position: absolute;
-        bottom: 0;
+   
+        
     }
     .btn-new {
-        top: 20px;
-        left: 50%;
+
        
     }
     
     .btn-roll {
-        top: 300px;
+ 
     }
     
     .btn-hold {
-        top: 350px;
+
     }
     .active .player-name::after{
-        display: none;
+     
     }
     .player-name{
-        position: static;
-        margin-left: -50px;
+
     }
     #winPoint{
-        width: 50px;
-        left: 45vw;
-        top: -400px;
+  
     }
 .btn-new{top: 10px;}
 .btn-roll{top: 410px;}
